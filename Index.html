@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/monty_hall.css">	
+<script type = "text/javascript" src = "js/monty_hall.js" ></script>
+<script type = "text/javascript" src = "js/jquery.js" ></script>
+<title>Title of the document</title>
+
+<script>
+
+
+</script>
+</head>
+
+<body class ="container">
+	<h2>La paradoja de Monty-Hall</h2>
+<div class = "row">
+	<p>
+		Imagínate que estás en un programa de televisión. En este concurso hay tres puertas de las cuales solo una tiene un premio. Una vez que elijes una, el presentador (que sabe donde está el premio) abre una de las puertas restantes mostrándote que esta vacía, y te da la opción de cambiar de puerta. Tu, ¿que eliges?
+		<ul>
+			<li> Me quedo con mi puerta
+			<li> Cambio de puerta
+			<li> Es lo mismo, hay un 50% de probabilidades
+		</ul>
+	</p>
+</div>	
+<div class = "row">
+	<button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick = "start()">Jugar</button>
+<div class = "container mb-3">
+	<div class = "row">
+		<div class = "col">
+			<img src="img/closed_door.png" class="door" id="0" alt="Flowers in Chania">
+		</div>	
+		<div class = "col">
+			<img src="img/closed_door.png" class="door" id="1" alt="Flowers in Chania">
+		</div>	
+		<div class = "col">
+			<img src="img/closed_door.png" class="door" id="2"  alt="Flowers in Chania">
+		</div>	
+	</div>
+</div>
+<div class = "container">
+	<span> % De veces que ganaste </span>
+	<div class="progress">
+	  	<div id="result_bar" class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+	  	aria-valuemin="0" aria-valuemax="100" style="width:0%">
+	    	0%
+	  	</div>
+	</div>
+	<span> % De veces ganadas manteniendo siempre la puerta elegida</span>
+	<div class="progress">
+		<div id="keep_bar" class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+	  	aria-valuemin="0" aria-valuemax="100" style="width:0%">
+	    	0% 
+	  	</div>
+	</div>
+	<span> % De veces ganadas cambiando siempre la puerta elegida</span>
+	<div class="progress">
+		<div id="change_bar" class="progress-bar bg-info" role="progressbar" aria-valuenow="0"
+		aria-valuemin="0" aria-valuemax="100" style="width:0%">
+			0%
+		</div>
+	</div>	
+</div>
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>	
+</body>
+
+</html>
